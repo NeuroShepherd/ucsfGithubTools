@@ -1,13 +1,19 @@
 Package: ucsfGithubTools
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Tools for connecting to the UCSF GitHub Enterprise instance
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Patrick Callahan
+Maintainer: The package maintainer <patrick.callahan@ucsf.edu>
+Description: This package wraps functions from the {usethis} package that allow
+    one to connect to the UCSF GitHub Enterprise Instance. Add your GitHub PAT
+    to .Renvrion as GITHUB_UCSF_PAT for authentication.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/NeuroShepherd/ucsfGithubTools
 BugReports: https://github.com/NeuroShepherd/ucsfGithubTools/issues
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    usethis,
+    devtools
