@@ -8,17 +8,15 @@
 #' @export
 #'
 install_github_UCSF <- function(repo,
-                                    username = NULL,
-                                    ref = "master",
+                                    ref = "HEAD",
                                     subdir = NULL,
                                     auth_token = github_UCSF_pat(quiet),
-                                    host = "git.ucsf.com/api/v3",
+                                    host = "api.github.com",
                                     quiet = FALSE,
                                     ...) {
 
   devtools::install_github(
     repo,
-    username = username,
     ref = ref,
     subdir = subdir,
     auth_token = auth_token,
